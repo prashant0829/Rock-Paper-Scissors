@@ -1,0 +1,39 @@
+img{
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.img-container{
+    margin:25px 0px 15px 0px ;
+}
+.game-window{
+    padding: 10px 100px 10px 100px;
+}
+.computer button,.game-button{
+    outline: none;
+    border: none;
+}
+.start-button{
+    border: none;
+    outline: none;
+}
+.start-button{outline: none !important;}
+@media (max-width:400px){
+    h1{
+        color: blue;
+    }
+    .game-window{
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+    }
+    .d-flex{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    img{
+        max-width: 80px;
+    }
+}

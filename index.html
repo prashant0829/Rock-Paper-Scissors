@@ -1,22 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+</head>
 
+<body>
+    <div class="container-fluid text-center">
+        <h1 class="mt-2 p-2">Rock Paper Scissors</h1>
+    </div>
+    <div class="container-fluid mt-1 shadow text-center p-2">
+        <div class="row game-window">
+            <div class="col-3 you">
+                <h2>You</h2>
+                <!-- Rock Section -->
+                <div class="rock d-flex flex-column img-container">
+                    <img src="images/rock.png" alt="Rock Image">
+                </div>
+                <button disabled class="btn btn-primary game-button rock-btn">Rock</button>
+                <!-- Paper Section -->
+                <div class="paper d-flex flex-column img-container">
+                    <img src="images/paper.png" alt="Paper Image"> computer-button
+                </div>
+                <button disabled class="btn btn-primary game-button paper-btn">Paper</button>
+                <!-- Scissor Section -->
+                <div class="scissors d-flex flex-column img-container">
+                    <img src="images/scissors.png" alt="Scissors Image">
+                </div>
+                <button disabled class="btn btn-primary game-button scissors-btn">Scissors</button>
+            </div>
+
+
+            <div class="col-sm-6 text-center">
+                <button class="btn btn-warning btn-lg start-button">Start Game</button>
+                <div class="score-div mt-2">
+                    <h3>Score</h3>
+                    <h2 class="score" >0:0</h2>
+                    <h1 class="message" >Hello</h1>
+                </div>
+            </div>
+
+
+            <div class="col-3 computer">
+                <h2>Computer</h2>
+                <div class="computer-div computerRock d-flex flex-column img-container">
+                    <img src="images/rock.png" alt="Rock Image">
+                </div>
+                <button class="btn btn-light disabled computer-button">Rock</button>
+                <div class="computer-div computerPaper d-flex flex-column img-container">
+                    <img src="images/paper.png" alt="Paper Image">
+                </div>
+                <button class="btn btn-light disabled computer-button">Paper</button>
+                <div class="computer-div computerScissors d-flex flex-column img-container">
+                    <img src="images/scissors.png" alt="Scissors Image">
+                </div>
+                <button class="btn btn-light disabled computer-button">Scissors</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center bg-dark p-5 mt-5">
+        <p class="text-white">Made By Prashant Bansal</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
