@@ -31,15 +31,18 @@ for(let i = 0;i < gameButton.length;i++){
             {
             message.innerHTML = "Hurray!! You won this round"
             userScore = userScore + 1;
+            playSound("win")
             }
         else if(userChoice===computerChoice)
         {
             message.innerHTML = "It's a Draw"
+            playSound("draw")
         }
         else
         {
             message.innerHTML = "Oh No!! Computer won this round"
             computerScore = computerScore + 1;
+            playSound("loose")
         }
         disableGameButtons();
         startButton.innerHTML = "Play Again"
@@ -52,6 +55,11 @@ for(let i = 0;i < gameButton.length;i++){
     });
 };
 
+
+function playSound(name) {
+    var audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
+  }
 
 function enableGameButtons(){
     document.querySelector(".rock-btn").disabled = false;

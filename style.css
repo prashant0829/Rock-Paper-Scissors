@@ -1,39 +1,146 @@
+body{
+    color: rgb(42, 42, 42);
+}
 img{
     max-width: 120px;
-    height: auto;
-    display: block;
+    height: 120px;
+    /* display: block; */
     margin: auto;
+}
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .img-container{
     margin:25px 0px 15px 0px ;
 }
 .game-window{
-    padding: 10px 100px 10px 100px;
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-evenly;
 }
 .computer button,.game-button{
     outline: none;
     border: none;
+    margin-top: 10px;
 }
 .start-button{
     border: none;
     outline: none;
 }
+a{
+    color: white;
+}
 .start-button{outline: none !important;}
 @media (max-width:400px){
     h1{
-        color: blue;
+        font-size: 1.4rem;
     }
     .game-window{
-        display: flex;
+       
         padding: 0px;
         margin: 0px;
     }
     .d-flex{
         display: flex;
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
         
     }
     img{
-        max-width: 80px;
+        max-width: 60px;
+        height: 60px;
+        display: inline-block;
+
+    }
+    .game-window{
+        padding: 0px;
+    }
+    .start-button{
+        margin: 10px 0px;
+        width: 100px;
+        height: auto;
+        font-size: .8rem;
+    }
+    .score{
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+   h1 .message{
+        font-size: .6rem;
+    }
+}
+@media (min-width:400px) and (max-width:500px){
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.game-window{
+    /* flex-wrap: nowrap; */
+    padding: 10px;
+}
+    img{
+    max-width: 90px;
+    height: 90px;
+}
+.game-button{
+    width: 60px;
+    height: 30px;
+    font-size: small;
+    padding: 0px;
+}
+.message{
+    font-size: 1.6rem;
+}
+
+}
+@media (min-width:500px) and (max-width:600px){
+    .message{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width:650px) and (max-width:850px){
+    img{
+        max-width: 120px;
+        height: 120px;
+        
+    }
+    .img-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .game-button{
+        width: 80px;
+
+    }
+}
+@media (min-width:850px) and (max-width:1000px){
+    img{
+        max-width: 140px;
+        height: 140px;
+        
+    }
+    .img-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .game-button{
+        width: 80px;
+
+    }
+}
+@media (min-width:1000px) and (max-width:1200px){
+    img{
+        max-width: 110px;
+        height: 110px;
+    }
+}
+@media (max-width:980px){
+    .score-section{
+        margin: 20px 10px;
     }
 }
